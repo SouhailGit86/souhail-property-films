@@ -17,6 +17,8 @@
     .eyebrow { color:var(--gold); text-transform:uppercase; letter-spacing:.16em; font-size:.78rem; font-weight:700; }
     h1 { font-family:Georgia, serif; font-size:clamp(3.2rem,9vw,7.2rem); font-weight:400; line-height:.93; margin:18px 0 26px; }
     .intro { max-width:630px; color:var(--muted); font-size:1.13rem; line-height:1.6; }
+    .cta { display:inline-block; margin-top:24px; padding:13px 18px; border:1px solid var(--gold); color:var(--ink); text-decoration:none; font-size:.82rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; transition:.2s ease; }
+    .cta:hover { background:var(--gold); color:var(--deep); }
     .film { margin-top:50px; padding:1px; background:linear-gradient(135deg, var(--gold), #4c4a44); }
     video { display:block; width:100%; background:#000; aspect-ratio:16/9; }
     .caption { display:flex; justify-content:space-between; gap:24px; padding:22px 4px 52px; color:var(--muted); }
@@ -26,10 +28,13 @@
     .fact + .fact { padding-left:24px; border-left:1px solid #364045; }
     .fact b { color:var(--gold); display:block; font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; margin-bottom:8px; }
     .process { margin-top:92px; max-width:760px; }
+    .steps { margin:30px 0 0; display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .step { border-top:1px solid #364045; padding-top:16px; color:var(--muted); line-height:1.55; font-size:.94rem; }
+    .step b { color:var(--gold); display:block; margin-bottom:6px; font-size:.76rem; letter-spacing:.1em; text-transform:uppercase; }
     h2 { font-family:Georgia, serif; font-weight:400; font-size:2.3rem; margin:0 0 16px; }
     .process p { color:var(--muted); line-height:1.7; font-size:1.05rem; }
     footer { margin-top:100px; padding-top:20px; border-top:1px solid #364045; color:var(--muted); font-size:.85rem; }
-    @media (max-width:640px) { main{padding:22px 18px 48px}.hero{padding:70px 0 25px}.caption{display:block}.caption div+div{margin-top:15px}.facts{grid-template-columns:1fr}.fact+.fact{padding-left:0;border-left:0;border-top:1px solid #364045} }
+    @media (max-width:640px) { main{padding:22px 18px 48px}.hero{padding:70px 0 25px}.caption{display:block}.caption div+div{margin-top:15px}.facts,.steps{grid-template-columns:1fr}.fact+.fact{padding-left:0;border-left:0;border-top:1px solid #364045} }
   </style>
 </head>
 <body>
@@ -38,7 +43,8 @@
     <section class="hero">
       <div class="eyebrow">Cinematic walkthroughs for distinctive stays</div>
       <h1>Make the property felt before it is booked.</h1>
-      <p class="intro">Property films created from existing listing imagery, with an emphasis on the rooms, route, and atmosphere that make a home memorable.</p>
+      <p class="intro">Cinematic property films for distinctive stays and listings, designed to make a potential guest pause, explore, and remember the home.</p>
+      <a class="cta" href="mailto:souhail.business123@gmail.com?subject=Property%20film%20concept">Request a film concept</a>
     </section>
     <section class="film" aria-label="Featured property film">
       <video controls playsinline preload="metadata">
@@ -47,19 +53,25 @@
       </video>
     </section>
     <div class="caption">
-      <div><strong>Featured property film</strong>Mountain home walkthrough</div>
+      <div><strong>Featured property-film concept</strong>Mountain home walkthrough</div>
       <div>Exterior approach · living spaces · bedrooms · deck · mountain setting</div>
     </div>
     <section class="facts">
       <div class="fact"><b>Format</b>16:9 cinematic property film</div>
-      <div class="fact"><b>Approach</b>Thoughtfully paced interior route</div>
-      <div class="fact"><b>Source</b>Existing listing photography</div>
+      <div class="fact"><b>Approach</b>Thoughtfully paced visual route</div>
+      <div class="fact"><b>Built from</b>Listing imagery and property briefing</div>
     </section>
     <section class="process">
-      <h2>A film built around the actual home.</h2>
-      <p>Each project begins with the listing imagery and the home’s circulation. The final piece moves from exterior arrival through the spaces guests care about, preserving the property’s actual character while creating a more immersive way to explore it.</p>
+      <h2>Built for a home people want to remember.</h2>
+      <p>Every film starts with the materials that best represent the listing: photography, floor plans, and a property briefing. The aim is a polished, immersive route through the spaces that matter most to a guest or buyer.</p>
+      <div class="steps">
+        <div class="step"><b>01 · Brief</b>Choose a standout home and share the listing materials.</div>
+        <div class="step"><b>02 · Route</b>Agree the spaces, atmosphere, and story the film should carry.</div>
+        <div class="step"><b>03 · Film</b>Receive a 16:9 cinematic film ready for listing pages and social.</div>
+      </div>
+      <p><a class="cta" href="mailto:souhail.business123@gmail.com?subject=Property%20film%20concept">Request a film concept</a></p>
     </section>
-    <footer>Souhail Hakkou · Cinematic Property Marketing</footer>
+    <footer>Souhail Hakkou · Cinematic Property Marketing · <a href="mailto:souhail.business123@gmail.com" style="color:#d7a34d">souhail.business123@gmail.com</a><br><br>Available for selected distinctive stays and luxury listings.</footer>
   </main>
 </body>
 </html>
